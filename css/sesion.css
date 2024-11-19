@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom, #090708d8, #46464600);
+    color: #3db6be;
+    padding: 30px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #3db6be;
+    margin: 5px 0;
+}
+
+.header-content nav {
+    display: block;
+}
+
+.header-content nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-content nav ul li {
+    display: inline-block;
+}
+
+.header-content nav ul li a {
+    text-decoration: none;
+    color: #3db6be;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+}
+
+.header-content nav ul li a:hover {
+    color: #fff;
+    background-color: #3db6be;
+    border-radius: 5px;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: calc(100% - 22px);
+}
+
+.login-button {
+    background-color: #EB05C8;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #b8039d;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .header-content nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(9, 7, 8, 0.8);
+        text-align: center;
+    }
+
+    .header-content.nav-active nav {
+        display: block;
+    }
+
+    .header-content nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
