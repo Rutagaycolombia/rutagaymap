@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Gay</title>
+    <link rel="stylesheet" href="./css/css22.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header role="banner">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="header-content">
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="./sesion.html">PAUTA CON NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+
+    <picture>
+        <source media="(min-width: 1080px)" srcset="img/b1.png" usemap="#mapita">
+        <source media="(max-width: 1024px)" srcset="img/1.png" usemap="#mapita">
+        <img src="img/b1.png" alt="" width="100%" height="auto">
+    </picture>
+
+    <picture>
+        <source media="(min-width: 1080px)" srcset="img/b2.png" usemap="#mapita">
+        <source media="(max-width: 1024px)" srcset="img/2.png" usemap="#mapita">
+        <img src="img/b2.png" alt="" width="100%" height="auto">
+    </picture>
+
+    <!-- Mapa de imagen para el botón "Quiero unirme" -->
+    <map name="mapita">
+        <area shape="default" href="./registro.html" alt="Boton">
+    </map>
+
+    <a href="./img/3.png">
+        <picture>
+            <source media="(min-width: 1080px)" srcset="img/b3.png" usemap="#mapita">
+            <source media="(max-width: 1024px)" srcset="img/3.png" usemap="#mapita">
+            <img src="img/b3.png" alt="" width="100%" height="auto">
+        </picture>
+    </a>
+
+    <picture>
+        <source media="(min-width: 1080px)" srcset="img/b4.png">
+        <source media="(max-width: 1024px)" srcset="img/4.png" style="opacity: 1;">
+        <img src="img/b4.png" alt="" width="100%" height="auto">
+    </picture>
+
+    <script>
+        function toggleMenu() {
+            const headerContent = document.querySelector('.header-content');
+            headerContent.classList.toggle('nav-active');
+        }
+    </script>
+</body>
+</html>
