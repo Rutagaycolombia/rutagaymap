@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/registro.css">
+    <script src="./js/registro.js"></script>
+</head>
+<script>
+    function toggleMenu() {
+        const headerContent = document.querySelector('.header-content');
+        headerContent.classList.toggle('nav-active');
+    }
+</script>
+<body> 
+    <header role="banner">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="header-content">
+            <nav role="navigation">
+                <ul>
+                    <li><a href="./index2.html">INICIO</a></li>
+                    <li><a href="./sesion.html">PAUTA CON NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+    <center>
+    <div class="form-container">
+        <img src="./img/Rectangle 4.png" alt="Logo" class="logo">
+        <h2>Si tu compañía está relacionada con nuestra plataforma, introduce tus datos de contacto y nos pondremos en contacto contigo lo más pronto posible.</h2>
+        <h3>In case your company is related to our platform, fill in your information and we will contact you as soon as possible.</h3>
+
+        <form id="contactForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password / Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="repeatPassword">Repeat password / Repite tu contraseña:</label>
+            <input type="password" id="repeatPassword" name="repeatPassword" required>
+
+            <label for="name">Name / Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Surname / Apellidos:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="comments">Send your comments / Envía tus comentarios:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <h3>Datos financieros</h3>
+
+            <label for="vatNumber">VAT Number / NIF o CIF:</label>
+            <input type="text" id="vatNumber" name="vatNumber">
+
+            <label for="address">Address / Dirección:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="postalCode">Postal code / Código Postal:</label>
+            <input type="text" id="postalCode" name="postalCode" required>
+
+            <label for="country">Country / País:</label>
+            <select id="country" name="country" required>
+            <option value="">Select a Country</option>
+            <option value="Colombia">Colombia</option>
+            </select>
+
+
+            <label for="city">City / Ciudad:</label>
+            <select id="city" name="city" required>
+                <option value="">Select a city</option>
+                <option value="Bogotá">Bogotá</option>
+            </select>
+
+            <label for="locality">Locality / Localidad:</label>
+            <select id="locality" name="locality" required>
+                <option value="">Select a locality</option>
+                <option value="Usaquén">Usaquén</option>
+                <option value="Chapinero">Chapinero</option>
+            </select>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I have read and accept the <a href="#">terms of use</a> and the <a href="#">privacy policy</a></label>
+            </div>
+
+            <button type="submit" class="send-button">SEND / ENVIAR</button>
+        </form>
+    </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
