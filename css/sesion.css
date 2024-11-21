@@ -94,8 +94,7 @@ label {
     text-align: left;
 }
 
-input[type="text"],
-input[type="password"] {
+input {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
