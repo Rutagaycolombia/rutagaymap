@@ -10,13 +10,3 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         alert('Please enter both username and password.');
         return;
     }
-
-    // Here you could add logic to authenticate the user
-    // For example, making an API call to validate credentials
-    if (username === 'admin' && password === 'password123') {
-        alert('Login successful!');
-        // Redirect to another page or perform some action
-    } else {
-        alert('Invalid username or password. Please try again.');
-    }
-});
